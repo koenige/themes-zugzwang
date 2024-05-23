@@ -1,0 +1,78 @@
+/*
+ *
+ * www.zugzwang.org
+ * (c) Gustaf Mossakowski <gustaf@koenige.org>, 2005-2012, 2014
+ * CSS: zzform colours
+ *
+ */
+
+#zzform .editbutton, #zzform td.recordid, #zzform th.recordid 
+			{ background-color: #FFF; }
+
+#zzform #record table 
+			{ background-color: #ccdfe9; }
+#zzform .subtable th, #zzform .subtable td
+			{ background-color: #ccdfe9; }
+#zzform #record tfoot th, #zzform #record tfoot td, td.where, th.where 
+			{ background-color: #d9e4e9; }
+
+#zzform table.data thead td, #zzform table.data thead th,
+	#zzform table.data tr.group td 
+			{ border-color: #003; }
+#zzform tr.last 
+			{ border-color: #003; } /* last row */
+
+#zzform tfoot td
+			{ border-color: #003; }
+
+#zzform tr.even
+			{ background-color: #ccdfe9; } /* even rows */
+#zzform tr.uneven
+			{ background-color: #d9e4e9; } /* uneven rows */
+
+#zzform th.order
+			{ background-color: #DDD; } /* column ORDER BY */
+
+#zzform ul.pages li
+			{ border-color: #999; }
+#zzform ul.pages li span
+			{ color: #CCC; }
+#zzform ul.pages li a:hover
+			{ background-color: #DDD; }
+
+#zzform td.left_separator
+			{ border-left-color: #d9e4e9; }
+
+body #zzform .separator hr
+			{ background-color: #FFF; color: #FFF; border: #FFF; }
+
+#zzform .zzfilter dd
+			{ border-color: #4A4D72; }
+#zzform .zzfilter dt
+			{ margin-top: 0; }
+#zzform .zzfilter strong, #zzform ul.pages strong
+			{ background-color: #DDD; }
+
+.identical_value	{ color: #ABA; }
+.identical_value a	{ color: #ABA; }
+
+#zzform .editbutton a
+			{ text-decoration: none; font-size: 90%; }
+
+#zzform ul.data li
+			{ width: 126px; height: 190px; padding: 0 12px 12px 0; margin: 0; }
+
+#zzform ul.data img
+			{ border: 2px solid white; }
+
+#zzform .legend
+			{ padding-top: 6px; }
+
+body #zzform .data .published a:link, body #zzform .data .published a:visited,
+body #zzform .data .published img
+			{ border-color: #8DCCEC; }
+#zzform ul.data .unpublished img
+			{ border-color: #CCC; }
+
+#zzform .separator p
+			{ padding: 0 .5em; }

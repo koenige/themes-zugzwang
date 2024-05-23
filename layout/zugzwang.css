@@ -1,0 +1,256 @@
+/* 
+ * www.zugzwang.org
+ * Copyright (c) 2008-2011, 2012, 2014, 2018, 2022 Gustaf Mossakowski <gustaf@koenige.org>
+ * CSS for screen
+ */
+
+
+html, body	{ background: #fff; height: 100.1%; }
+body		{ background: #fff url(/_layout/zugzwang/head.png) repeat-x; }
+body 		{ font-family: Helvetica, 'Trebuchet MS', sans-serif; 
+			padding: 0; margin: 0 auto; color: #003; line-height: 1.5; 
+			font-size: 95%; }
+#all		{ height: 100%; width: 100%; }
+
+h1			{ /*border-top: 1px solid white; padding-top: .5em; */
+			font-size: 140%; margin: .5em 0 0 0; text-align: left; }
+h2			{ font-size: 110%; }
+h1, h2, h3, h4, h5, h6
+			{ color: #006699; font-family: Helvetica, 'Trebuchet MS', sans-serif; }
+hr			{ margin: 2em 20px 2em 0; background: white;
+			height: 30px; border: none; clear: left; }
+
+a img, h1 img
+			{ border: none; vertical-align: top; }
+a:link		{ color: #003; }
+a:visited	{ color: #669; }
+a:link:hover, a:visited:hover, a:link:focus, a:visited:focus,
+#menu a:link:hover, #menu a:visited:hover, #menu a:link:focus, #menu a:visited:focus
+			{ text-decoration: underline; color: #003; /* background-color: #ffd89e; */ }
+
+.en			{ font-style: italic; }
+p.de		{ padding: 0 3em 0 0; }
+p.en		{ padding: 0 0 0 3em; }
+
+/* page head */
+
+#head		{ padding: 40px 1em 1em;
+			/*border-bottom: 1px solid #FFF;*/ margin-right: 20px; }
+#head img	{ border: 0; padding: 20px 10px 10px .5em; }
+#head p		{ margin: 0; }
+#head #logo img
+			{ padding: 0 0 0 2em; background: white; vertical-align: top; }
+@media screen and (min-width: 480px) {
+	#logo		{ margin: 0; background: url(/_layout/zugzwang/pawns.png) 0 0% repeat-x; text-align: right; margin: 1em; }
+}
+@media screen and (max-width: 480px) {
+	#head		{ padding: 40px 0; margin-right: 0; }
+	#logo		{ text-align: center; }
+	#head #logo img
+				{ padding: 0; }
+}
+
+#breadcrumbs
+			{ font-size: 90%; color: #85CAEC; }
+
+/* Inhaltsbereich */
+#middle		{ height: 100%; width: 100%; text-align: center; font-size: 90%; 
+			/* text-align for IE 5 */ }
+#canvas		{ max-width: 58em; margin: 0 auto; 
+			text-align: left; /* text-align see above */ 
+			position: relative; /* needed for footer positioning*/
+			height: auto !important; /* IE6: treaded as min-height*/
+			min-height:100%; /* real browsers */
+			padding: 0 1em; }
+
+/* Fuß */
+#foot 		{ max-width: 55em; width: 100%; margin: 1em auto 0; clear: both; 
+			position: absolute; bottom: 0; /* stick to bottom */ }
+.foot		{ margin: 0 25px; height: 4.5em; }
+#foot form	{ margin: 0; }
+
+/* Menue */
+#menu		{ margin: .6em 0; padding: 0; font-size: 100%;
+			text-transform: uppercase; 
+			text-align: center; font-weight: normal; line-height: 1; 
+			 clear: both; }
+#menu li, #menufoot li
+			{ list-style: none; float: right; border-right: 0px dotted #006699; }
+#menu li:first-child, #menufoot li:first-child
+			{ border-right: none; }
+#menu a, #menufoot a, #menu strong, #menufoot strong
+			{ text-decoration: none; padding: .4em .7em .1em; float: left; 
+			color: #85CAEC; }
+#menufoot li:last-child strong
+			{ padding-right: 0; }
+#menu a:link:hover, #menufoot a:link:hover, #menu a:visited:hover, #menufoot a:visited:hover,
+#menu a:link:focus, #menufoot a:link:focus, #menu a:visited:focus, #menufoot a:visited:focus
+			{ color: #006699; }
+#menu li:first-child a, #menufoot li:first-child a, #menu li:first-child strong
+			{ padding-right: 0; }
+#menufoot	{ padding: .5em 0; margin: 0; }
+
+.submenu	{ position: absolute; left: 0; top: 100%; margin: 0; padding: 0; }
+#menu .submenu { text-transform: none; font-weight: normal; }
+#menu .submenu a { background: #006699; border-color: #006699; padding: .2em .75em; }
+
+.submenu strong { font-weight: normal; color: #006699; }
+#menu a.below, #menu strong { font-weight: bold; }
+
+@media screen and (min-width: 480px) {
+	#text		{ padding: .5em 10px 5.5em 25px; /* Menue Seite footer Seite */ }
+}
+@media screen and (max-width: 480px) {
+	#text		{ padding: 0 0 5.5em 0; }
+}
+
+@media screen and (min-width: 480px) {
+	#login, .nachricht, #zzform
+			{ padding-right: 25px; }
+}
+
+#login fieldset
+			{ border: none; background: #d6effb url(/_layout/zugzwang/zugzwang-stripes.png) repeat-y 100% 0; margin: 0; }
+#login legend
+			{ background: #d6effb; padding: .5em; }
+#login label
+			{ float: left; width: 10em; }
+#login form	{ margin: 1em 0 0; }
+#login form p
+			{ margin: .5em 0; }
+#login form p.submit
+			{ margin-left: 10em; }
+#logout		{ position: absolute; right: 2em; top: 2em; font-weight: bold; 
+			z-index: 4; margin: 0; padding-right: 20px; }
+
+	
+			
+.clear		{ clear: both; }
+
+dt			{ font-weight: bold; margin-top: .5em; }
+dd a		{ font-weight: bold; }
+
+#text a img	{ margin-bottom: 4px; }
+
+#schriftzug	{ position: absolute; z-index: 0; left: 10px; bottom: 1.8em; 
+			margin: 0 0 -10px; padding: 0; font-size: 370%; font-weight: bold; 
+			color: #20332F }
+
+.spalte { width: 26em; margin-right: .5em; float: left; }
+.spalte66 { width: 64%; margin-right: 3%; float: left; }
+.spalte33 { width: 32%;  float: left; color: #CCC; }
+.col1, .col2	{ width: 48%; float: left; overflow: hidden; }
+.col1			{ margin-right: 4%; }
+
+.oben { margin: 0; padding: 1em 0 0; }
+.oben img { border: none; }
+.unten { clear: both; padding-top: .25em; }
+
+#grossbild { text-align: center; margin: auto; height: 100%; }
+#grossbild img { border: none; }
+#grossbild table { width: 100%; height: 100%; border-collapse: collapse; }
+#grossbild td { padding: 0; }
+#text p, #text dl, #text ul { padding-right: 20px; }
+#text .data p	{ padding-right: 0; }
+
+#links h2 { margin-bottom: 0; }
+#links p { margin-top: 0; }
+
+#photo_gross { margin: -1em 0 0; float: left; }
+#photo_gross img { border: 0; }
+
+.nachricht		{ clear: both; padding-right: 20px; }
+.nachricht h2	{ padding-top: 1em; }
+p.hauptbild		{ float: left; margin: 0 0 .5em 0; padding: 1em 1em 0 0; width: 600px; }
+p.hauptbild img { max-width: 600px; max-height: 600px; }
+
+#zzform .show_hidden .hidden { display: block; }
+
+ul.galerie72 { list-style: none; padding: 0; margin: 1em 0; }
+ul.galerie72 li { height: 76px; width: 76px; float: left;
+	margin: 0 10px 10px 0; padding: 0; text-align: center; display: table-cell;
+	vertical-align: middle; }
+ul.galerie72 li a { display: table-cell; vertical-align: middle; height: 72px; width: 72px;  }
+ul.galerie72 li img { vertical-align: bottom; }
+ul.galerie72 li a.nolink img { border-color: #A39F53; }
+
+/* E-Mail */
+
+.mailto		{ border-collapse: collapse; }
+.mailto td	{ vertical-align: top; padding: .25em; }
+.mailto p	{ margin: .25em 0 .5em; }
+
+/* Sprüche */
+
+.w15 {font-size: 140%; font-style: normal;}
+.w10 {font-size: 120%;}
+.w5 {font-size: 110%; font-style: normal;}
+
+/* Education */
+
+.life th	{ padding-right: .5em; }
+
+/* Projects */
+
+.projects		{ padding: 0; margin: .5em 0 1em; list-style: none; line-height: 1.2; }
+.projects li	{ padding: 0; margin: 1em 0; width: 47%; margin-right: 2%; float: left; }
+.projects .key	{ width: 80px; height: 80px; float: left; margin: 0 16px 16px 0; 
+				border: 1px solid #EFEFEF; background: #FFF; 
+				font-size: 2em; font-weight: bold; overflow: hidden;
+				line-height: 1; }
+.projects h2	{ color: #EFEFEF; margin: 0; position: relative; left: -3px; top: -3px; }
+.projects h3	{ font-weight: bold; margin: 0; font-size: 100%; }
+.projects p		{ margin: 0 0 .5em; margin-left: 98px; }
+.projects p.overview
+				{ margin-bottom: .5em; line-height: 1.1; }
+.projects p.overview a
+				{ text-decoration: none; }
+.projects li.uneven
+				{ clear: left; }
+
+/* news */
+
+.news		{ list-style: none; margin: 0 0 1em; padding: 0;  }
+.news .projectimg
+			{ float: left; margin: 0 1em 1em 0; }
+.news li	{ clear: left; margin: 1em 0; padding: 1em 0 0; border-top: 1px dotted #DDD; }
+.news li:first-child
+			{ border-top: none; padding: 0; }
+.news h3	{ margin: 0 0 .5em; font-size: 100%; }
+.news p		{ margin: 0 0 .5em; }
+
+/* Map */
+
+#map		{ height: 360px; }
+#map .kmldesc		{ font-size: 80%; padding: 0 5px; line-height: 1.2em; }
+#map .kmldesc img	{ float: left; padding: 0 10px 5px 0; }
+#map .kmlhead		{ margin: 0; padding: 0 5px 10px; }
+
+/* */
+
+.abstract		{ font-size: 110%; }
+
+/* publications */
+
+.publications a
+			{ font-weight: bold; }
+.publications p
+			{ margin: 0 0 .5em; }
+
+
+@media print {
+	body		{ background: #FFF; color: #000; font-family: sans-serif;
+				font-size: 8pt; }
+	#text		{ font-size: 8pt; }
+	h1, h2		{ margin-top: 0; }
+
+	td			{ border-bottom: 1pt dotted #000; }
+
+	#text		{ padding: 0; }
+	.fuss		{ padding: 0 0; }
+
+	#zzform table.data td 
+				{ border-right: none; }
+}
+
+%%% include zugzwang/layout/zzform-colours.css %%%
