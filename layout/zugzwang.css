@@ -1,7 +1,7 @@
 /* 
  * www.zugzwang.org
- * Copyright (c) 2008-2011, 2012, 2014, 2018, 2022 Gustaf Mossakowski <gustaf@koenige.org>
- * CSS for screen
+ * Copyright (c) 2008-2011, 2012, 2014, 2018, 2022, 2025 Gustaf Mossakowski <gustaf@koenige.org>
+ * CSS
  */
 
 
@@ -55,8 +55,6 @@ p.en		{ padding: 0 0 0 3em; }
 			{ font-size: 90%; color: #85CAEC; }
 
 /* Inhaltsbereich */
-#middle		{ height: 100%; width: 100%; text-align: center; font-size: 90%; 
-			/* text-align for IE 5 */ }
 #canvas		{ max-width: 58em; margin: 0 auto; 
 			text-align: left; /* text-align see above */ 
 			position: relative; /* needed for footer positioning*/
@@ -91,11 +89,7 @@ p.en		{ padding: 0 0 0 3em; }
 			{ padding-right: 0; }
 #menufoot	{ padding: .5em 0; margin: 0; }
 
-.submenu	{ position: absolute; left: 0; top: 100%; margin: 0; padding: 0; }
-#menu .submenu { text-transform: none; font-weight: normal; }
-#menu .submenu a { background: #006699; border-color: #006699; padding: .2em .75em; }
 
-.submenu strong { font-weight: normal; color: #006699; }
 #menu a.below, #menu strong { font-weight: bold; }
 
 @media screen and (min-width: 480px) {
@@ -133,13 +127,7 @@ dd a		{ font-weight: bold; }
 
 #text a img	{ margin-bottom: 4px; }
 
-#schriftzug	{ position: absolute; z-index: 0; left: 10px; bottom: 1.8em; 
-			margin: 0 0 -10px; padding: 0; font-size: 370%; font-weight: bold; 
-			color: #20332F }
-
 .spalte { width: 26em; margin-right: .5em; float: left; }
-.spalte66 { width: 64%; margin-right: 3%; float: left; }
-.spalte33 { width: 32%;  float: left; color: #CCC; }
 .col1, .col2	{ width: 48%; float: left; overflow: hidden; }
 .col1			{ margin-right: 4%; }
 
@@ -147,78 +135,17 @@ dd a		{ font-weight: bold; }
 .oben img { border: none; }
 .unten { clear: both; padding-top: .25em; }
 
-#grossbild { text-align: center; margin: auto; height: 100%; }
-#grossbild img { border: none; }
-#grossbild table { width: 100%; height: 100%; border-collapse: collapse; }
-#grossbild td { padding: 0; }
-#text p, #text dl, #text ul { padding-right: 20px; }
-#text .data p	{ padding-right: 0; }
-
 #links h2 { margin-bottom: 0; }
 #links p { margin-top: 0; }
 
-#photo_gross { margin: -1em 0 0; float: left; }
-#photo_gross img { border: 0; }
-
-.nachricht		{ clear: both; padding-right: 20px; }
-.nachricht h2	{ padding-top: 1em; }
-p.hauptbild		{ float: left; margin: 0 0 .5em 0; padding: 1em 1em 0 0; width: 600px; }
-p.hauptbild img { max-width: 600px; max-height: 600px; }
-
 #zzform .show_hidden .hidden { display: block; }
 
-ul.galerie72 { list-style: none; padding: 0; margin: 1em 0; }
-ul.galerie72 li { height: 76px; width: 76px; float: left;
-	margin: 0 10px 10px 0; padding: 0; text-align: center; display: table-cell;
-	vertical-align: middle; }
-ul.galerie72 li a { display: table-cell; vertical-align: middle; height: 72px; width: 72px;  }
-ul.galerie72 li img { vertical-align: bottom; }
-ul.galerie72 li a.nolink img { border-color: #A39F53; }
 
 /* E-Mail */
 
 .mailto		{ border-collapse: collapse; }
 .mailto td	{ vertical-align: top; padding: .25em; }
 .mailto p	{ margin: .25em 0 .5em; }
-
-/* Sprüche */
-
-.w15 {font-size: 140%; font-style: normal;}
-.w10 {font-size: 120%;}
-.w5 {font-size: 110%; font-style: normal;}
-
-/* Education */
-
-.life th	{ padding-right: .5em; }
-
-/* Projects */
-
-.projects		{ padding: 0; margin: .5em 0 1em; list-style: none; line-height: 1.2; }
-.projects li	{ padding: 0; margin: 1em 0; width: 47%; margin-right: 2%; float: left; }
-.projects .key	{ width: 80px; height: 80px; float: left; margin: 0 16px 16px 0; 
-				border: 1px solid #EFEFEF; background: #FFF; 
-				font-size: 2em; font-weight: bold; overflow: hidden;
-				line-height: 1; }
-.projects h2	{ color: #EFEFEF; margin: 0; position: relative; left: -3px; top: -3px; }
-.projects h3	{ font-weight: bold; margin: 0; font-size: 100%; }
-.projects p		{ margin: 0 0 .5em; margin-left: 98px; }
-.projects p.overview
-				{ margin-bottom: .5em; line-height: 1.1; }
-.projects p.overview a
-				{ text-decoration: none; }
-.projects li.uneven
-				{ clear: left; }
-
-/* news */
-
-.news		{ list-style: none; margin: 0 0 1em; padding: 0;  }
-.news .projectimg
-			{ float: left; margin: 0 1em 1em 0; }
-.news li	{ clear: left; margin: 1em 0; padding: 1em 0 0; border-top: 1px dotted #DDD; }
-.news li:first-child
-			{ border-top: none; padding: 0; }
-.news h3	{ margin: 0 0 .5em; font-size: 100%; }
-.news p		{ margin: 0 0 .5em; }
 
 /* Map */
 
@@ -248,7 +175,6 @@ ul.galerie72 li a.nolink img { border-color: #A39F53; }
 	td			{ border-bottom: 1pt dotted #000; }
 
 	#text		{ padding: 0; }
-	.fuss		{ padding: 0 0; }
 
 	#zzform table.data td 
 				{ border-right: none; }

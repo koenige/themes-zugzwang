@@ -1,5 +1,5 @@
 # Zugzwang Project
-# Copyright (c) 2007-2011, 2016, 2018 Gustaf Mossakowski <gustaf@koenige.org>
+# Copyright (c) 2007-2011, 2016, 2018, 2025 Gustaf Mossakowski <gustaf@koenige.org>
 # HTML-Ausgabe: Seite
 #
 #
@@ -12,11 +12,9 @@
 	<link rel="icon" href="/favicon.ico" type="image/x-ico">
 %%% page head %%%
 %%% page packagecss %%%
-	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/_layout/zugzwang-ie6.css" media="all"><![endif]-->
 </head>
 <body%%% page extra_body_attributes %%%>
 <div id="all">
-<!--[if lte IE 6]><table id="middle"><tr><td><![endif]-->
 <div id="canvas">
 <header><div id="head">
 <p id="logo"><strong>%%% link / "<img src='/_layout/zugzwang/zugzwang.png' alt='Zugzwang Project'>" %%%</strong></p>
@@ -45,5 +43,4 @@
 </div>
 </div>
 </div>
-<!--[if lte IE 6]></td></tr></table><![endif]-->
 </html>
