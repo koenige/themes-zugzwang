@@ -7,7 +7,7 @@
 
 %%% include zugzwang/layout/font-opensans.css %%%
 
-html, body	{ background: #D0D9DF; height: 100%; }
+html, body	{ background: #F5F5F5 linear-gradient(#E9EAEA, #FAFAFA) fixed; height: 100%; }
 body 		{ font-family: "Open Sans", Helvetica, 'Trebuchet MS', sans-serif; 
 			padding: 0; margin: 0 auto; color: #003; line-height: 1.5; 
 			font-size: 95%; }
@@ -58,8 +58,7 @@ header nav a, header nav strong
 
 /*  breadcrumbs */
 #breadcrumbs
-			{ font-size: 90%; color: #666; background: #D0D9DF; padding: 1.5rem 0 0;
-			text-align: right; }
+			{ font-size: 90%; color: #666; padding: 1.5rem 0 0; text-align: right; }
 @media screen and (max-width: 480px) {
 	header		{ padding: 1rem; }
 	header nav	{ font-size: 120%; }
