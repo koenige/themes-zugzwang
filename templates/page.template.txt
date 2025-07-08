@@ -14,33 +14,30 @@
 %%% page packagecss %%%
 </head>
 <body%%% page extra_body_attributes %%%>
-<div id="all">
 <div id="canvas">
-<header><div id="head">
-<p id="logo"><strong>%%% link / "<img src='/_layout/zugzwang/zugzwang.png' alt='Zugzwang Project'>" %%%</strong></p>
-%%% page logout "<p id='logout'><a href="/logout/">Logout</a></p>" %%%
+<header>
+<p id="logo"><strong>%%% link start / %%%%%% icon zz-logo %%%%%% link end %%%</strong></p>
+<nav>
 <ul id="menu">
 %%% page nav %%%
 </ul>
-<div class="clear"></div>
-</div></header>
-<div id="text" role="main">
-<p id="breadcrumbs">%%% text "You are here:" %%% %%% page breadcrumbs %%%</p>
+</nav>
+<nav id="breadcrumbs">%%% text "You are here:" %%% %%% page breadcrumbs %%%</nav>
+</header>
+<main id="text">
 %%% page mainimage %%%
 %%% page text %%%
 
 %%% page gallery %%%
-%%% page fusslinks %%%
-<div class="clear">&nbsp;</div>
-</div>
+%%% page links %%%
+</main>
 
-<div id="foot">
-<div class="foot">
-<ul id="menufoot">
+<footer>
+<nav>
+<ul>
 %%% page nav_bottom %%%
 </ul>
-</div>
-</div>
-</div>
+</nav>
+</footer>
 </div>
 </html>
