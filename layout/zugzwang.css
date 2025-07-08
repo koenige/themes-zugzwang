@@ -5,9 +5,10 @@
  */
 
 
-html, body	{ background: #fff; height: 100.1%; }
-body		{ background: #fff url(/_layout/zugzwang/head.png) repeat-x; }
-body 		{ font-family: Helvetica, 'Trebuchet MS', sans-serif; 
+%%% include zugzwang/layout/font-opensans.css %%%
+
+html, body	{ background: #D0D9DF; height: 100%; }
+body 		{ font-family: "Open Sans", Helvetica, 'Trebuchet MS', sans-serif; 
 			padding: 0; margin: 0 auto; color: #003; line-height: 1.5; 
 			font-size: 95%; }
 #all		{ height: 100%; width: 100%; }
