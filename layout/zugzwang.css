@@ -108,22 +108,9 @@ footer nav a, footer nav strong
 
 
 /* login */
-#login fieldset
-			{ border: none; background: #d6effb url(/_layout/zugzwang/zugzwang-stripes.png) repeat-y 100% 0; margin: 0; }
-#login legend
-			{ background: #d6effb; padding: .5em; }
-#login label
-			{ float: left; width: 10em; }
-#login form	{ margin: 1em 0 0; }
-#login form p
-			{ margin: .5em 0; }
-#login form p.submit
-			{ margin-left: 10em; }
-#logout		{ position: absolute; right: 2em; top: 2em; font-weight: bold; 
-			z-index: 4; margin: 0; padding-right: 20px; }
+%%% include default/layout/login.css %%%
 
-	
-			
+		
 .clear		{ clear: both; }
 
 dt			{ font-weight: bold; margin-top: .5em; }
