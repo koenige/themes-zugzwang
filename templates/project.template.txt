@@ -52,10 +52,10 @@
 <p><a href="%%% item direct_link %%%">%%% text "Further information about <strong>%s</strong>" event %%%</strong></a></p>
 %%% endif %%%
 
+%%% unless license_category_proprietary %%%
 %%% if links | development %%%
 <h2>%%% text Further Information %%%</h2>
 %%% item links %%%
-%%% unless license_category_proprietary %%%
 %%% loop development %%%
 <p>%%% item category %%%: <strong><a href="%%% item property %%%">%%% item property %%%</a></strong></p>
 %%% loop end %%%
