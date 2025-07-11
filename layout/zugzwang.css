@@ -50,6 +50,8 @@ header nav a, header nav strong
 			{ color: #004f77; }
 
 /* logo */
+#logo svg .cls-4
+			{ fill: none; }
 #logo a:hover svg polyline, #logo a:hover svg line
 			{ stroke: #069; }
 #logo a:hover svg path
