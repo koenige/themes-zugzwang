@@ -163,7 +163,9 @@ dd a		{ font-weight: bold; }
 
 /* projects */
 .abstract-event	{ font-size: 140%; }
-.project-box	{ float: right; width: 15rem; margin: 0 0 1rem 1rem; }
+@media screen and (min-width: 641px) {
+	.project-box	{ float: right; width: 15rem; margin: 0 0 1rem 1rem; }
+}
 .projects strong, .projects p, .projects div
 				{ display: inline; }
 .projects p::before
