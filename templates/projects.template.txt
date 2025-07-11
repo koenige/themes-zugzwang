@@ -1,0 +1,34 @@
+# zugzwang theme
+# projects template
+# 
+# Part of »Zugzwang Project«
+# https://www.zugzwang.org/themes/zu
+#
+# @author Gustaf Mossakowski <gustaf@koenige.org>
+# @copyright Copyright © 2023-2024 Gustaf Mossakowski
+# @license http://opensource.org/licenses/lgpl-3.0.html LGPL-3.0
+# 
+%%% if no_projects %%%
+%%% text We have no projects in this category. %%%
+
+%%% else %%%
+<div class="projecttext">
+
+%%% loop categories_type %%%
+<h2>%%% item category %%%</h2>
+%%% item description markdown %%%
+
+<ul class="projects">
+%%% loop projects %%%
+<li><strong itemprop="name"><a href="%%% setting base %%%%%% path events_project identifier %%%">%%% item event %%%</a></strong> 
+<div itemprop="description" class="project_description">
+%%% item abstract markdown %%%
+</div>
+</li>
+%%% loop end %%%
+</ul>
+
+%%% loop end %%%
+
+</div>
+%%% endif %%%
